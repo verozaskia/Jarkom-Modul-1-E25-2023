@@ -43,7 +43,7 @@ Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 # Penyelesaian Soal Nomor 2
 Yang pertama kita lakukan adalah melakukan filter `ip.addr == 10.21.78.111`
 
-![5 cara8](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/e3db9001-c53c-406f-be22-4a382ea072f3)
+<img width="960" alt="Screenshot_8" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/9ea47b1a-2022-48b7-8471-4df38313b83c">
 
 Lalu, kita dapat melakukan stream HTTP pada bagian GET.
 
