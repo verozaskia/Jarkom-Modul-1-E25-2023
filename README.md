@@ -31,17 +31,22 @@ Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal be
 
 # Penyelesaian Soal Nomor 3
 Untuk menyelesaikan soal ini, kita perlu melalukan filter dengan 
-`bash ip.addr == 239.255.255.250 && (udp.port == 3702 || tcp.port == 3702)`
+`ip.addr == 239.255.255.250 && (udp.port == 3702 || tcp.port == 3702)`
 hasil outputnya adalah seperti ini
 ![3 cara](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/a9ada023-39bc-4890-8d48-c8bf887d824e)
+
 <img width="672" alt="3 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/de881f4a-a318-4881-bd58-6867f72cc4db">
-
-
 
 # SOAL NOMOR 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 # Penyelesaian Soal Nomor 4
+Kita perlu mencari detail packet dengan nomor 130
+![4 cara](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/8b871513-5ccb-4ea3-b3ac-924bc41b731d)
+
+lalu didapatkan hasil 0x18e5
+<img width="675" alt="4 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/15701557-eb3e-472a-b328-4ed5351435c9">
+
 
 # SOAL NOMOR 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -60,21 +65,36 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 # Penyelesaian Soal Nomor 7
+Untuk menampilkannya dapat menggunakan filter ip.dst == 184.87.193.88
+<img width="960" alt="7 cara" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/2d532fd1-67a2-4bd9-888d-60268dcb60d9">
+
+dapat dilihat dibagian displayed ada 6 paket.
+<img width="672" alt="7 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/a71b7a9c-41e7-4f54-bfdf-a5ac545b1b37">
 
 # SOAL NOMOR 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
 # Penyelesaian Soal Nomor 8
+Untuk menampilkan paket yang menuju port 80 dapat menggunakan filter 
+`tcp.dstport == 80 || udp.dstport == 80`
+<img width="960" alt="8 cara" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/d36adee9-10c8-46ff-8820-7f0675005ce8">
+
+<img width="960" alt="8 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/01753df6-ed5f-4727-8e18-f559915ab735">
 
 # SOAL NOMOR 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
 # Penyelesaian Soal Nomor 9
+Untuk menampilkannya dapat menggunakan filter `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`
+<img width="960" alt="9 cara" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/ba880068-6cb8-45e7-90ad-1953d8c56a39">
+
+<img width="674" alt="9 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/483ec636-5021-45c1-ad07-13db14655586">
 
 # SOAL NOMOR 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 # Penyelesaian Soal Nomor 10
+
 
 
 
