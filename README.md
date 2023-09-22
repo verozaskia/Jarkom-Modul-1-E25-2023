@@ -41,13 +41,15 @@ Hasil :
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
 # Penyelesaian Soal Nomor 2
-Yang pertama kita lakukan adalah melakukan filter `http contains "komputer"`
+Yang pertama kita lakukan adalah melakukan filter `ip.addr == 10.21.78.111`
 
-<img width="960" alt="2 cara1" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/16f2ac7e-72b4-413d-b008-ae13a7bbb106">
+![5 cara8](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/e3db9001-c53c-406f-be22-4a382ea072f3)
 
-Lalu, kita dapat right-click pada baris packet, lalu memilih bagian follow lalu TCP Stream.
+Lalu, kita dapat melakukan stream HTTP pada bagian GET.
 
-<img width="960" alt="2 cara2" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/8590a10f-75db-4121-b28c-d597e28c99a4">
+<img width="960" alt="Screenshot_5" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/a2c7488e-f719-4346-bde6-d8f7b3d9816e">
+
+Setelah itu, dapat dilihat server yang digunakan adalah gunicorn.
 
 ![2 cara3](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/93063113-0f57-4a7a-9592-df7e045f855e)
 
