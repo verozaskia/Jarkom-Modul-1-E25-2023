@@ -91,6 +91,26 @@ Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk men
 - Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 
 # Penyelesaian Soal Nomor 5
+Melakukan Follow TCP Stream dan analisis seluruh conversation. Disini ditemukan text
+```
+I send u a p45sword of a zip file, but you should decode it in Base64.
+
+Here is the p45sword:
+
+NWltcGxlUGFzNXdvcmQ=
+```
+![image](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/114855785/e2752f8f-658e-43b4-a4d7-8054b23b9bea)
+
+Berdasarkan instruksi text tersebut, dilakukan decrypt base64
+
+![image](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/114855785/c3321b65-d9a1-46c3-986c-780da221492a)
+
+Hasil decryptnya yaitu 5implePa5word akan digunakan untuk membuka zip yang berisi command nc untuk menjawab pertanyaan soal 5 dan juga mendapatkan flag
+
+![image](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/114855785/b9ac2843-0488-4511-9168-ae948c18873b)
+
+### Kendala saat mengerjakan :
+Menggunakan bait pada packet 14 yang berisi string base64 yang menghasilkan jawaban salah karena password yang sebenarnya bukan itu.
 
 # SOAL NOMOR 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
@@ -101,6 +121,8 @@ Ketika dianalisis text soal, bisa dilihat ada beberapa kata yang "berbeda" diban
 ![image](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/114855785/5d0160ad-ed43-4810-b881-daa0c3caac3d)
 
 Menurut soal, hasil pencarian di google untuk error message yaitu a1 e5 u21 yang dapat ditangkap sebagai A adalah huruf pertama, E adalah huruf ke 5, dan U adalah huruf ke 21. Ketika dilakukan substitusi kepada angka-angka pada source address didapatkan JDRNJA
+
+![image](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/114855785/7a72f11a-5b63-425c-935a-48e28e10189f)
 
 ### Kendala saat pengerjaan
 Kendala yang dialami selama pengerjaan soal ini yaitu bagaimana substitusi source address karena menurut kami ip address hanya memiliki 4 angka.
@@ -141,6 +163,9 @@ Untuk menampilkannya dapat menggunakan filter `ip.src == 10.51.40.1 && ip.dst !=
 Hasil :
 
 <img width="674" alt="9 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/483ec636-5021-45c1-ad07-13db14655586">
+
+### Kendala saat mengerjakan :
+Meskipun menjawab dengan benar, tetapi di awal praktikum, jawaban tersebut dianggap salah.
 
 # SOAL NOMOR 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
