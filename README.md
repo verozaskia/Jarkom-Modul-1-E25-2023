@@ -41,10 +41,10 @@ Untuk menyelesaikan soal ini, kita perlu melalukan filter dengan
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 # Penyelesaian Soal Nomor 4
-Kita perlu mencari detail packet dengan nomor 130
+Kita perlu mencari detail packet dengan nomor 130, lalu didapatkan hasil 0x18e5 dari Checksum yang terdapat pada bagian User Datagram Protocol
+
 ![4 cara](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/8b871513-5ccb-4ea3-b3ac-924bc41b731d)
 
-lalu didapatkan hasil 0x18e5
 <img width="675" alt="4 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/15701557-eb3e-472a-b328-4ed5351435c9">
 
 
