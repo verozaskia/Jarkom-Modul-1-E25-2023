@@ -181,10 +181,11 @@ password yang ada hanya `dhafin:kesayangannyak0k0` yang memunculkan flag
 <img width="960" alt="10 cara2" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/af3b21e8-ce76-4de4-9f6b-9d1eceeb5ac0">
 
 Hasil :
+
 <img width="674" alt="10 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/b283045a-40b9-41b7-b968-c960677051b7">
 
-
-
+### Kendala saat mengerjakan :
+Kami masih melakukan cara manual untuk menemukan `username:password` yaitu dengan membuka tcp stream satu persatu
 
 
 
