@@ -1,4 +1,3 @@
-# Praktikum 1 Jaringan Komputer
 # Jarkom-Modul-1-E25-2023
 Berikut adalah Repository dari Kelompok E25 untuk pengerjaan Praktikum Modul 1 Jaringan Komputer. Dalam Repository ini terdapat Anggota Kelompok, Dokumentasi serta Penjelasan tiap soal, Screenshot Output, dan Kendala yang dialami.
 
@@ -31,6 +30,13 @@ Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal be
 - Protokol layer transport apa yang digunakan?
 
 # Penyelesaian Soal Nomor 3
+Untuk menyelesaikan soal ini, kita perlu melalukan filter dengan 
+`bash ip.addr == 239.255.255.250 && (udp.port == 3702 || tcp.port == 3702)`
+hasil outputnya adalah seperti ini
+![3 cara](https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/a9ada023-39bc-4890-8d48-c8bf887d824e)
+<img width="672" alt="3 jwb" src="https://github.com/verozaskia/Jarkom-Modul-1-E25-2023/assets/108173647/de881f4a-a318-4881-bd58-6867f72cc4db">
+
+
 
 # SOAL NOMOR 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
